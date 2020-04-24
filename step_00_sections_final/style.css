@@ -1,0 +1,102 @@
+.section-1 {
+  background-color: rgb(198, 250, 250);
+}
+
+.section-2 {
+  background-color: rgb(173, 200, 247);
+}
+
+.section-3 {
+  background-color: rgb(164, 171, 250);
+}
+
+.section-4 {
+  background-color: rgb(224, 178, 252);
+}
+
+.section-5 {
+  background-color: rgb(255, 182, 244);
+}
+
+
+/* le contenu d'une section sera encapsulé dans une divavec ce CSS*/
+.wrapper {
+
+  width: 90%; /*largeur maximale du contenu*/
+  height: 90%; /*hauteur maximale du contenu*/
+  margin: auto; /* calculer les marges automatiquement en fonction des valeurs ci-dessus */
+
+  /* center l'ensemble des éléments verticalement et horizontalement*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+/* ----------------------------*/
+/* --- BARRE DE NAVIGATION --- */
+
+/* notre élement de navigation contenant tous les liens */
+.nav {
+  position: fixed;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: x-large;
+  font-weight: bolder;
+}
+
+/* chacun des liens composant notre barre de navigation*/
+.nav-link {
+  position: relative;
+  display: inline; /* passer à block pour avoir un menu en colone*/
+
+  color: black;
+
+  /* espacement entre les élements des liens de navigation*/
+  margin: 20px;
+  /* changer la forme du pointer de la souris*/
+  cursor: pointer;
+}
+
+/* définition d'une nouvelle propriété au survol*/
+.nav-link:hover {
+  text-shadow: 0px 0px 25px rgb(63, 63, 63);
+}
+
+
+/* --- animations --- */
+
+/* on définit une transition : on définit les propriété initiales*/
+.nav-link::after {
+  content: '';
+  display: inline;
+  position: absolute;
+
+  background: black;
+
+  left: 0;
+  /* on débute à gauche du mot*/
+  bottom: -3px;
+  /*3 pixels sous le mot*/
+  height: 5px;
+  /* trait de 5 pixels de haut*/
+  width: 0px;
+  /* non visibble si pas actif*/
+  opacity: 0%;
+
+  /* animer == faire une transition au sur une ou plusieures propriété*/
+  transition: width .9s ease-out, opacity .5s ease-in;
+  /* on anime deux transitions une sur la largeur du trait et une sur l'opacité*/
+}
+
+/* on donne de nouvelles propriétés à width et opacity au survol*/
+.nav-link:hover::after {
+  width: 33%;
+  opacity: 100%;
+}
+
+/* on en donne de nouvelles au click */
+.nav-link.active::after {
+  width: 100%;
+  opacity: 100%;
+}
