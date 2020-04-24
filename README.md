@@ -45,7 +45,7 @@ https://css-tricks.com/
         * [Pousser la mise en forme](#Pousser-la-mise-en-forme)
           * [Ajouter une font](#Ajouter-une-font)
           * [Modifier le look de notre menu](#Modifier-le-look-de-notre-menu)
-          * [Ajouter de l'interaction et des transitions](#Ajouter-de-l'interaction-et-des-transitions)
+          * [Ajouter de l'interaction et des transitions](#Ajouter-des-transitions)
 
 
 * [Mise en ligne avec github-pages](#Mise-en-ligne-avec-github-pages)
@@ -375,7 +375,7 @@ Ces différentes propriétés peuvent nous permettre de déjà pas mal changer l
 
 [**home**](#Contenu)
 
-##### Ajouter de l'interaction et des transitions
+##### Ajouter des transitions
 
 La manière la plus simple d'ajouter de l'interaction est d'ajouter des propriétés au survol de la souris. Cela est fait grâce à une **pseudo classe** c'est à dire une classe existante qui peut être ajouter à tout élément et qui s'applique dans un cas précis. Ici nous allons d'abord utiliser [**hover**](https://developer.mozilla.org/fr/docs/Web/CSS/:hover).
 
