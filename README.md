@@ -46,7 +46,7 @@ https://css-tricks.com/
           * [Ajouter une font](#Ajouter-une-font)
           * [Modifier le look de notre menu](#Modifier-le-look-de-notre-menu)
           * [Ajouter de l'interaction et des transitions](#Ajouter-des-transitions)
-
+    * [Ajouter du contenu aux sections](#Ajouter-du-contenu-aux-section-)
 
 * [Mise en ligne avec github-pages](#Mise-en-ligne-avec-github-pages)
 
