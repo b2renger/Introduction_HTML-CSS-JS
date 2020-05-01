@@ -138,9 +138,10 @@ Le body va être le corps de notre page et c'est ici que nous allons ajouter le 
 </body>
 ```
 
-Nous allons maintenant créer une liste d'élements à l'aide des balises [**ul**](https://developer.mozilla.org/fr/docs/Web/HTML/Element/ul) et [**li**](https://developer.mozilla.org/fr/docs/Web/HTML/Element/li). Ces éléments correspondront plus tard aux différentes catégories de notre site.
+Nous allons maintenant créer une liste d'élements à l'aide des balises [**ul**](https://developer.mozilla.org/fr/docs/Web/HTML/Element/ul) et [**li**](https://developer.mozilla.org/fr/docs/Web/HTML/Element/li). Ces éléments correspondront plus tard aux différentes catégories de notre site. Etant donné que ces éléments seront notre barre de navigation nous allons encapsuler tout cela dans une balise [**nav**](https://developer.mozilla.org/fr/docs/Web/HTML/Element/nav)
 
 ```html
+<nav>
   <ul>
     <li> Accueil</li>
     <li> Gallerie</li>
@@ -148,6 +149,7 @@ Nous allons maintenant créer une liste d'élements à l'aide des balises [**ul*
     <li> Random</li>
     <li> Réseaux sociaux</li>
   </ul>
+</nav>
 ```
 et voilà nous avons une première page web assez rudimentaire.
 
@@ -203,6 +205,13 @@ Nous allons par ailleur ajouter à cette division de notre page un [**id**](http
 </div>
 ```
 
+Il est aussi possible d'utiliser la balise [**main**](https://developer.mozilla.org/fr/docs/Web/HTML/Element/main)
+
+```html
+<main id="wall" class="wall main">
+</main>
+```
+
 A l'interieur de cette *div* nous allons inclure des [**sections**](https://developer.mozilla.org/fr/docs/Web/HTML/Element/section) qui correspondront aux différentes catégories.
 
 ```html
@@ -220,7 +229,7 @@ Puis à l'intérieur de cette section nous allons encore ajouter une **div**, av
 Nous allons répéter cela plusieures fois pour chaque catégorie de notre site web avec un contenu différent :
 
 ```html
-<div id="wall" class="wall main">
+<main id="wall" class="wall main">
     <section class="section section-1">
       <div class="wrapper">
         <h1> Hello ! </h1>
@@ -246,7 +255,7 @@ Nous allons répéter cela plusieures fois pour chaque catégorie de notre site 
         <h1> website </h1>
       </div>
     </section>
-  </div>
+  </main>
 ```
 Tout cela c'est bien mais tous les élements *h1* sont empilés les un sur les autres. Quand on clic sur les menus ont voit bien du mouvement mais pas réellement ce qui était espéré...
 
@@ -329,6 +338,8 @@ Pour régler ce problème nous allons attribuer une propriété de [**position**
 ```
 
 Vous pouvez expérimenter avec les différents attributs de la propriété *position* grâce à cette page sur W3school : https://www.w3schools.com/css/css_positioning.asp
+
+Vous pouvez aussi utiliser la propriété *sticky*
 
 Vous pouvez trouver l'ensemble du code de cette étape ici :  https://github.com/b2renger/Introduction_HTML-CSS-JS/tree/master/step_00_sections_b
 
