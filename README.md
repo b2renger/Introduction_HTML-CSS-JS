@@ -17,14 +17,20 @@ Dans la plupart des sites vous aurez donc trois fichiers :
 Dans ce dépot nous allons expliquer un type de mise en forme qui couvrira un certain nombre de cas d'usages, mais si vous souhaitez personaliser plus en détail votre site vous devrez effectuer des recherches supplémentaires.
 
 Vous pourrez aussi avoir besoin de didacticiels détailles sur les différents composants de chaque langage :
-https://www.w3schools.com/html/
-https://www.w3schools.com/css/
-https://www.w3schools.com/js/
+
+- https://www.w3schools.com/html/
+
+- https://www.w3schools.com/css/
+
+- https://www.w3schools.com/js/
 
 Vous pourrez retrouver la référence officielle des trois langages à ces adresses : 
-https://developer.mozilla.org/fr/docs/Web/HTML
-https://developer.mozilla.org/fr/docs/Web/CSS
-https://developer.mozilla.org/fr/docs/Web/JavaScript#R%C3%A9f%C3%A9rence
+
+- https://developer.mozilla.org/fr/docs/Web/HTML
+
+- https://developer.mozilla.org/fr/docs/Web/CSS
+
+- https://developer.mozilla.org/fr/docs/Web/JavaScript#R%C3%A9f%C3%A9rence
 
 Vous pouvez effectuer des recherches aussi sur ce forum :
 https://css-tricks.com/
@@ -34,7 +40,7 @@ https://css-tricks.com/
 ## Contenu
 
 * [Templating avec HTML et CSS](#Templating-avec-HTML-et-CSS)
-    * [Sections et scrolling](#sections-et-scrolling)
+    * [Sections et scrolling](#sections-et-scrolling) - [**DEMO**](https://b2renger.github.io/Introduction_HTML-CSS-JS/step_00_sections_final/)
         * [Anatomie du squelette HTML](Anatomie-du-squelette-HTML)
             * [header](#Header)
             * [body](#Body)
@@ -466,23 +472,29 @@ Vous pouvez trouver l'ensemble du code de cette étape ici :  https://github.com
 [**home**](#Contenu)
 
 
-### Ajouter du contenu aux sections (balises html classiques et css)
+### Ajouter du contenu aux sections
 
 [**home**](#Contenu)
 
-### Ajouter une gallerie photo (navbar secondaire propre à une section et setInterval)
+#### Ajouter un message d'accueil
+
+https://animejs.com/documentation/#cssSelector
 
 [**home**](#Contenu)
 
-### Construire des cards
+#### Ajouter une gallerie photo (navbar secondaire propre à une section et setInterval)
 
 [**home**](#Contenu)
 
-#### Ouvrir une modal en cliquant sur une card
+#### Construire des cards
 
 [**home**](#Contenu)
 
-#### Ouvrir une autre page en cliquant sur une card
+##### Ouvrir une modal en cliquant sur une card
+
+[**home**](#Contenu)
+
+##### Ouvrir une autre page en cliquant sur une card
 
 [**home**](#Contenu)
 
@@ -499,6 +511,9 @@ Vous pouvez trouver l'ensemble du code de cette étape ici :  https://github.com
 ### Limitations de ce modèle
 
 [**home**](#Contenu)
+
+
+
 
 ---
 ## Mise en ligne avec gh-pages
