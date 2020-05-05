@@ -14,8 +14,8 @@ h1 {
 h2 {
   color: rgb(255, 255, 255);
   font-family: 'Open Sans', sans-serif;
-  font-size: 30px;
-  font-weight: 300;
+  font-size: 36px;
+  font-weight: 340;
   line-height: 32px;
   margin: 0 0 px;
   text-align: center;
@@ -38,8 +38,8 @@ p {
 #subtitle{
   color: rgb(255, 251, 251);
   font-family: 'Helvetica Neue', sans-serif;
-  font-size: 30px;
-  font-weight: 300;
+  font-size: 54px;
+  font-weight: 340;
   line-height: 32px;
   margin: 0 0 px;
   text-align: center;
