@@ -1,5 +1,5 @@
 h1 {
-  color: #111;
+  color: rgb(255, 255, 255);
   opacity: 100%;
   font-family: 'Helvetica Neue', sans-serif;
   font-size: 275px;
@@ -12,7 +12,7 @@ h1 {
 }
 
 h2 {
-  color: #111;
+  color: rgb(255, 255, 255);
   font-family: 'Open Sans', sans-serif;
   font-size: 30px;
   font-weight: 300;
@@ -25,7 +25,7 @@ h2 {
 }
 
 p {
-  color: #000035;
+  color: #ffffff;
   font-family: 'Helvetica Neue', sans-serif;
   font-size: 14px;
   line-height: 24px;
@@ -36,7 +36,7 @@ p {
 
 
 #subtitle{
-  color: #111;
+  color: rgb(255, 251, 251);
   font-family: 'Helvetica Neue', sans-serif;
   font-size: 30px;
   font-weight: 300;
@@ -50,7 +50,9 @@ p {
 /* ---------------*/
 /* --- CLASSES ---*/
 .section-1 {
-  background-color: rgb(198, 250, 250);
+  /*background-color: rgb(198, 250, 250);*/
+  background-image: url('assets/backg.png');
+  background-size: cover;
 }
 
 .section-2 {
@@ -105,7 +107,7 @@ p {
   display: inline;
   /* passer à block pour avoir un menu en colone*/
 
-  color: black;
+  color: rgb(255, 255, 255);
 
   /* espacement entre les élements des liens de navigation*/
   margin: 20px;
@@ -115,7 +117,7 @@ p {
 
 /* définition d'une nouvelle propriété au survol*/
 .nav-link:hover {
-  text-shadow: 0px 0px 25px rgb(63, 63, 63);
+  text-shadow: 0px 0px 25px rgb(220, 220, 255);
 }
 
 
@@ -126,7 +128,7 @@ p {
   display: inline;
   position: absolute;
 
-  background: black;
+  background: rgb(255, 255, 255);
 
   left: 0;
   /* on débute à gauche du mot*/
