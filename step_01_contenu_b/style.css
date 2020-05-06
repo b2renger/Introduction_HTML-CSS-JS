@@ -1,0 +1,208 @@
+h1 {
+  color: rgb(255, 255, 255);
+  opacity: 100%;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 275px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  line-height: 1;
+  text-align: center;
+
+
+}
+
+h2 {
+  color: rgb(255, 255, 255);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 36px;
+  font-weight: 340;
+  line-height: 32px;
+  margin: 0 0 px;
+  text-align: center;
+  display: inline;
+
+
+}
+
+p {
+  color: #ffffff;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0 0 24px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+body {
+  margin: 0;
+}
+
+
+#subtitle {
+  color: rgb(255, 251, 251);
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 54px;
+  font-weight: 340;
+  line-height: 32px;
+  margin: 0 0 px;
+  text-align: center;
+  display: inline;
+}
+
+
+/* ---------------------------*/
+/* --- section 2 gallerie ---*/
+#gallerie {
+  width: auto;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+
+
+
+
+.prev-slide,
+.next-slide {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+
+.prev-slide {
+  border-left: 3px solid #fff;
+  border-top: 3px solid #fff;
+  left: 100px;
+}
+
+.next-slide {
+  border-right: 3px solid #fff;
+  border-top: 3px solid #fff;
+  transform: translateY(-50%) rotate(45deg);
+  right: 100px;
+}
+
+.prev-slide:hover {
+  transform: translateY(-50%) rotate(-45deg) scale(1.1);
+}
+
+.next-slide:hover {
+  transform: translateY(-50%) rotate(45deg) scale(1.1);
+}
+
+
+/* ---------------*/
+/* --- CLASSES ---*/
+.section-1 {
+  /*background-color: rgb(198, 250, 250);*/
+  background-image: url('assets/backg.jpg');
+  background-size: cover;
+}
+
+.section-2 {
+  background-color:black;
+}
+
+
+.section-3 {
+  background-color: rgb(164, 171, 250);
+}
+
+.section-4 {
+  background-color: rgb(224, 178, 252);
+}
+
+.section-5 {
+  background-color: rgb(255, 182, 244);
+}
+
+
+/* le contenu d'une section sera encapsulé dans une divavec ce CSS*/
+.wrapper {
+
+  width: 90%;
+  /*largeur maximale du contenu*/
+  height: 90%;
+  /*hauteur maximale du contenu*/
+  margin: auto;
+  /* calculer les marges automatiquement en fonction des valeurs ci-dessus */
+
+  /* center l'ensemble des éléments verticalement et horizontalement*/
+  display: grid;
+  align-items: center;
+  justify-content: center;
+
+}
+
+/* ----------------------------*/
+/* --- BARRE DE NAVIGATION --- */
+
+/* notre élement de navigation contenant tous les liens */
+.nav {
+  position: fixed;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: x-large;
+  font-weight: bolder;
+}
+
+/* chacun des liens composant notre barre de navigation*/
+.nav-link {
+  position: relative;
+  display: inline;
+  /* passer à block pour avoir un menu en colone*/
+
+  color: rgb(255, 255, 255);
+
+  /* espacement entre les élements des liens de navigation*/
+  margin: 20px;
+  /* changer la forme du pointer de la souris*/
+  cursor: pointer;
+}
+
+/* définition d'une nouvelle propriété au survol*/
+.nav-link:hover {
+  text-shadow: 0px 0px 25px rgb(220, 220, 255);
+}
+
+
+/* --- animations --- */
+/* on définit une transition : on définit les propriété initiales*/
+.nav-link::after {
+  content: '';
+  display: inline;
+  position: absolute;
+
+  background: rgb(255, 255, 255);
+
+  left: 0;
+  /* on débute à gauche du mot*/
+  bottom: -3px;
+  /*3 pixels sous le mot*/
+  height: 5px;
+  /* trait de 5 pixels de haut*/
+  width: 0px;
+  /* non visibble si pas actif*/
+  opacity: 0%;
+
+  /* animer == faire une transition au sur une ou plusieures propriété*/
+  transition: width .9s ease-out, opacity .5s ease-in;
+  /* on anime deux transitions une sur la largeur du trait et une sur l'opacité*/
+}
+
+/* on donne de nouvelles propriétés à width et opacity au survol*/
+.nav-link:hover::after {
+  width: 33%;
+  opacity: 100%;
+}
+
+/* on en donne de nouvelles au click */
+.nav-link.active::after {
+  width: 100%;
+  opacity: 100%;
+}
