@@ -4,13 +4,13 @@ console.log(wall);
 
 /////////////////////////////////////////
 // Animations de la gallerie
-let indexImage = 0 
+let indexImage = 0
 // le nom des images stockés dans un tableau
 let images = ["image00.jpg", "image01.jpg", "image02.gif", "image03.gif", "image04.jpg",
     "image06.jpg", "image07.jpg", "image08.jpg", "image09.jpg"
 ]
 let gal = document.querySelectorAll('#gallerie')[0].childNodes[1] // récupérer l'élément img dans la div gallerie
-
+console.log(gal)
 // écouter les clicks sur l'élément "next-slide"
 document.querySelector('.next-slide').addEventListener('click', function () {
     indexImage += 1 // on augmente la valeur de l'index permettant de déterminer l'image à charger
@@ -24,21 +24,24 @@ document.querySelector('.next-slide').addEventListener('click', function () {
         },
         loopComplete: function (anim) { // lorsque la première anim est finie
             changeImageSrc() // on change l'image
-            // on créer une seconde anim
-            anime({
-                targets: gal,
-                translateX: {
-                    value: [4000, 0],
-                    duration: 500,
-                    easing: 'easeInOutQuad'
-                }});
+            // on crée une seconde anim quand l'image est chargée
+            gal.onload = function () {
+                anime({
+                    targets: gal,
+                    translateX: {
+                        value: [4000, 0],
+                        duration: 500,
+                        easing: 'easeInOutQuad'
+                    }
+                });
+            }
         }
     });
 });
 
 // écouter les clicks sur l'élément "prev-slide"
 document.querySelector('.prev-slide').addEventListener('click', function () {
-    indexImage -= 1 
+    indexImage -= 1
     anime({
         targets: gal,
         translateX: {
@@ -48,13 +51,16 @@ document.querySelector('.prev-slide').addEventListener('click', function () {
         },
         loopComplete: function (anim) {
             changeImageSrc()
-            anime({
-                targets: gal,
-                translateX: {
-                    value: [-4000, 0],
-                    duration: 500,
-                    easing: 'easeInOutQuad'
-                }});
+            gal.onload = function () {
+                anime({
+                    targets: gal,
+                    translateX: {
+                        value: [-4000, 0],
+                        duration: 500,
+                        easing: 'easeInOutQuad'
+                    }
+                });
+            }
         }
     });
 })
@@ -63,7 +69,7 @@ document.querySelector('.prev-slide').addEventListener('click', function () {
 function changeImageSrc() {
     if (indexImage < 0) indexImage = images.length - 1
     else if (indexImage > images.length - 1) indexImage = 0
-    gal.src = "assets/" + images[indexImage] 
+    gal.src = "assets/" + images[indexImage]
 }
 
 
