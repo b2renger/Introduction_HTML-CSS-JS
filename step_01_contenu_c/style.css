@@ -47,25 +47,20 @@ img {
 /* --- section 3 cards ---*/
 
 .cards {
-
   display: grid;
   grid-template-columns: repeat(3, minmax(300px, 2fr));
-  grid-auto-rows: auto;
   grid-gap: 5rem;
   color: #ffffff;
   padding-top: 5%;
-  /*border: 5px solid white;*/
+  padding-bottom: 15%;
 }
 
 
 .card {
   background-color : rgb(255, 255, 255);
- 
   border-radius: 10px;
-  /*padding: .5rem;*/
-  /*width: auto;*/
+  height : auto;
   display: flexbox;
-  /*vertical-align: middle;*/
   text-align: center;
 }
 
@@ -84,7 +79,7 @@ img {
   color:black;
   padding : 10px;
   font-family: 'Helvetica Neue', sans-serif;
-  font-size: 48px;
+  font-size: 36px;
   padding-bottom: 10px;
   text-align: left;
   text-justify: inter-word;
