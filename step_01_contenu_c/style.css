@@ -39,8 +39,9 @@ body {
 
 img {
   box-sizing: border-box;
-  width: 100%;
-  padding: 10 px;
+  width: 90%;
+  max-height: 80%;
+  padding-top: 20%;
 }
 
 /* ---------------------------*/
@@ -48,18 +49,18 @@ img {
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(3, minmax(300px, 2fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 2fr));
   grid-gap: 5rem;
   color: #ffffff;
   padding-top: 5%;
-  padding-bottom: 15%;
+  padding-bottom: 25%;
 }
 
 
 .card {
   background-color : rgb(255, 255, 255);
-  border-radius: 10px;
-  height : auto;
+  border-radius: 20px;
+
   display: flexbox;
   text-align: center;
 }
@@ -83,6 +84,13 @@ img {
   padding-bottom: 10px;
   text-align: left;
   text-justify: inter-word;
+}
+
+.card-img {
+  box-sizing: border-box;
+  width: 100%;
+  padding-top: 0%;
+  
 }
 
 
@@ -193,15 +201,21 @@ img {
 
 /* notre élement de navigation contenant tous les liens */
 .nav {
+  background-color :black;
+  opacity: 75%;
   position: fixed;
 
   font-family: 'Roboto', sans-serif;
   font-size: x-large;
   font-weight: bolder;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-right:25px;
 }
 
 /* chacun des liens composant notre barre de navigation*/
 .nav-link {
+  
   position: relative;
   display: inline;
   /* passer à block pour avoir un menu en colone*/
@@ -212,6 +226,7 @@ img {
   margin: 20px;
   /* changer la forme du pointer de la souris*/
   cursor: pointer;
+  ;
 }
 
 /* définition d'une nouvelle propriété au survol*/
