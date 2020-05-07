@@ -57,8 +57,9 @@ body {
 
 img {
   box-sizing: border-box;
-  width: 70%;
-  padding: 10 px;
+  width: 90%;
+  max-height: 80%;
+  padding-top: 20%;
 }
 
 
