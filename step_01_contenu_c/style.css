@@ -52,7 +52,7 @@ img {
   grid-template-columns: repeat(auto-fill, minmax(300px, 2fr));
   grid-gap: 5rem;
   color: #ffffff;
-  padding-top: 5%;
+  padding-top: 25%;
   padding-bottom: 25%;
 }
 
@@ -61,7 +61,7 @@ img {
   background-color : rgb(255, 255, 255);
   border-radius: 20px;
 
-  display: flexbox;
+  display: block;
   text-align: center;
 }
 
@@ -99,6 +99,29 @@ img {
 /* ---------------------------*/
 /* --- section 2 gallerie ---*/
 
+img {
+  box-sizing: border-box;
+  width: 80%;
+  max-height: 70%;
+  padding-top: 15%;
+}
+
+
+video {
+  width: 80%;
+  max-height: 70%;
+  padding-top: 15%;
+}
+
+
+
+#gallerie {
+  width: auto;
+  display: block;
+  vertical-align: middle;
+  text-align: center;
+}
+
 .prev-slide,
 .next-slide {
   position: absolute;
@@ -129,13 +152,6 @@ img {
 
 .next-slide:hover {
   transform: translateY(-50%) rotate(45deg) scale(1.1);
-}
-
-#gallerie {
-  width: auto;
-  display: flexbox;
-  vertical-align: middle;
-  text-align: center;
 }
 
 
