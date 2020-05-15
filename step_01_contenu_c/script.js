@@ -3,6 +3,36 @@ console.log(wall);
 
 
 /////////////////////////////////////////
+// Activation des fenêtres modales
+
+// Get all the modal conatiners windows
+var modalO = document.getElementsByClassName('modal__overlay');
+// Get all the buttons that open a modal
+var btn = document.getElementsByClassName("modal__button");
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("modal__close");
+
+
+for (let i = 0; i < modalO.length; i++) {
+    btn[i].onclick = function () {
+        modalO[i].style.display = "block";
+    }
+
+    span[i].onclick = function () {
+        modalO[i].style.display = "none";
+    }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+    if (event.target == modalO) {
+        modalO.style.display = "none";
+    }
+}
+
+
+
+/////////////////////////////////////////
 // Animations de la gallerie
 let indexImage = 0
 // le nombre d'images
@@ -24,15 +54,15 @@ document.querySelector('.next-slide').addEventListener('click', function () {
             changeImageSrc() // on change l'image       
             // on crée une seconde anim quand l'image est chargée
             //gal.onload = function () {
-                anime({
-                    targets:  gal[indexImage],
-                    translateX: {
-                        value: [4000, 0],
-                        duration: 500,
-                        easing: 'easeInOutQuad'
-                    }
-                });
-           // }
+            anime({
+                targets: gal[indexImage],
+                translateX: {
+                    value: [4000, 0],
+                    duration: 500,
+                    easing: 'easeInOutQuad'
+                }
+            });
+            // }
         }
     });
 });
@@ -40,7 +70,7 @@ document.querySelector('.next-slide').addEventListener('click', function () {
 // écouter les clicks sur l'élément "prev-slide"
 document.querySelector('.prev-slide').addEventListener('click', function () {
     anime({
-        targets:  gal[indexImage],
+        targets: gal[indexImage],
         translateX: {
             value: [0, 4000],
             duration: 500,
@@ -50,16 +80,16 @@ document.querySelector('.prev-slide').addEventListener('click', function () {
             gal[indexImage].style.display = "none"
             indexImage -= 1
             changeImageSrc()
-           // gal.onload = function () {
-                anime({
-                    targets:  gal[indexImage],
-                    translateX: {
-                        value: [-4000, 0],
-                        duration: 500,
-                        easing: 'easeInOutQuad'
-                    }
-                });
-           // }
+            // gal.onload = function () {
+            anime({
+                targets: gal[indexImage],
+                translateX: {
+                    value: [-4000, 0],
+                    duration: 500,
+                    easing: 'easeInOutQuad'
+                }
+            });
+            // }
         }
     });
 })

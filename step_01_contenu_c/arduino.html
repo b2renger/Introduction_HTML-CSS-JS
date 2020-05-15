@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Great Stuff</title>
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+  <link rel="stylesheet" href="./style.css">
+  <link href="libs/fontawesome-free-5.13.0-web/css/all.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- NAVIGATION MENU -->
+  <nav>
+    <a href="./index.html"><button class="card__btn">Home<span>&larr;</span></button> </a>
+  </nav>
+
+  <main>
+
+    <div class=" page__wrapper">
+      <div class=" page">
+
+        <div class="card">
+          <div class="card__content">
+            <div class="card__text">
+              <p> <strong>Arduino</strong> is a fun way to approach electronics. For anyone willing to control physical
+                things,
+                or gather data about his environment it's probably the go to project you'll need.</p>
+            </div>
+            <div> <img src="assets/image01.jpg"><img> </div>
+          </div>
+        </div>
+
+
+        <div class="card">
+          <div class="card__content">
+            <div class="card__text">
+              <p> <strong>Arduino</strong> is modular by essence. You can plug many kinds of components : ranging from
+                lunminosity sensors and buttons to led and servos, including cameras, screens etc.</p>
+            </div>
+            <div> <img src="assets/image02.gif"><img> </div>
+            <div class="card__text">
+              <p> This little gif is a demonstration of analog in -> digital out. Arduino is used to gather luminosity
+                data
+                and transfers it via USB to a processing programm drawing a tree. The span of the tree is directly
+                linked
+                to
+                the ambiant luminosity.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="card">
+          <div class="card__content">
+            <video controls ">
+               <source src=" assets/video.mp4" type="video/mp4">
+            </video>
+            <div class="card__text">
+              <p> There are a lot of third party library and components. For instance <strong>1Sheeld</strong>. Allows
+                you
+                to easilty interact with your phone via its companion app. It is the case in this small text-to-speech example. </p>
+            </div>
+            <a href="https://1sheeld.com/"><button class="card__btn">Check out 1Sheeld's
+                website<span>&rarr;</span></button> </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+  </main>
+
+
+  <script src="./libs/anime.min.js"></script>
+  <script src="./libs/wall.js"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>
