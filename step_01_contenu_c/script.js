@@ -15,11 +15,27 @@ var span = document.getElementsByClassName("modal__close");
 
 for (let i = 0; i < modalO.length; i++) {
     btn[i].onclick = function () {
-        modalO[i].style.display = "block";
+         modalO[i].style.display = "contents"; // try this !!
+
+         /*
+        let d = modalO[i]
+       // d.style.display = "block";
+        d.style.position = "fixed";
+       
+        const scrollY = document.body.style.top;
+        d.style.margin.left = (document.body.clientWidth - d.clientWidth)/2 + 'px';
+        d.style.margin.top = (document.body.clientHeight - d.offsetHeight)/2 + scrollY+ 'px';
+        
+        console.log(document.body.clientHeight, document.body.clientWidth)
+        console.log(modalO[i])*/
+      
+
+
     }
 
     span[i].onclick = function () {
         modalO[i].style.display = "none";
+       
     }
 }
 
@@ -27,8 +43,17 @@ for (let i = 0; i < modalO.length; i++) {
 window.onclick = function (event) {
     if (event.target == modalO) {
         modalO.style.display = "none";
+        //const body = document.body;
+        //const scrollY = body.style.top;
+        //body.style.position = '';
+        //body.style.top = '';
+        //window.scrollTo(0, parseInt(scrollY || '0') * -1);
     }
 }
+
+window.addEventListener('scroll', () => {
+    document.documentElement.style.setProperty('--scroll-y', `${window.scrollY}px`);
+});
 
 
 

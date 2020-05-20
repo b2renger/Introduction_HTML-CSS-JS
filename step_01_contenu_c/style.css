@@ -1,6 +1,6 @@
-
 body {
   margin: 0;
+
 }
 
 h1 {
@@ -35,7 +35,7 @@ p {
   text-justify: inter-word;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
@@ -58,13 +58,13 @@ video {
 /* ----- other pages ------*/
 .page {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(40rem, 2fr));
+  grid-template-columns: repeat(auto-fill, minmax(30rem, 2fr));
   text-align: center;
 }
 
 .page__wrapper {
   background-color: black;
-  display : block;
+  display: block;
   padding-top: 5%;
   padding-bottom: 5%;
   padding-left: 5%;
@@ -77,34 +77,34 @@ video {
 /* ----------------------------*/
 /* -----  modal ---------------*/
 
+
 .modal__overlay {
   display: none;
-  background : rgba(0,0,0,0.7);
-  height: 100%;
-  left: 0;
+  background: rgba(0, 0, 0, 0.9);
   position: fixed;
-  width: 100%;
-  top: 0;
+  top: 12%;
+  left: 12%;
+  width: 76%;
+  height: auto;
+  margin-bottom: 2rem;
+ 
+  border: 2px solid white;
 }
 
-.modal__container {
-  align-items: center;
-  display: flex;
-  height: 100%;
-  justify-content: center;
-  overflow-x: auto;
-}
 
 .modal__content {
-  width: 460px;
+  width: 70%;
   padding: 48px;
-  position: relative;
+  /*position: relative;*/
   margin: auto;
 }
 
 .modal__close {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
   font-size: 2rem;
   font-weight: 500;
+  margin-bottom: 6rem;
 }
 
 .modal__text {
@@ -114,6 +114,12 @@ video {
   margin-bottom: 1.5rem;
 }
 
+.modal__image {
+  box-sizing: border-box;
+  width: 50%;
+  max-height: 70%;
+  padding-top: 15%;
+}
 
 /* ----------------------------*/
 /* ----- cards ----------------*/
@@ -121,7 +127,7 @@ video {
 /* source : https://codepen.io/that_boy_curt/pen/mdbvxoW*/
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30%, 2fr));
+  grid-template-columns: repeat(auto-fit, minmax(45%, 2fr));
   grid-gap: 5rem;
   color: #ffffff;
   padding-top: 10rem;
@@ -150,7 +156,7 @@ video {
 }
 
 .card__content {
-  padding:1.5rem;
+  padding: 1.5rem;
 }
 
 .card__header {
@@ -160,7 +166,7 @@ video {
 }
 
 .card__text {
-  font-size: 1.25rem;  
+  font-size: 1.25rem;
   color: #3d3d3d;
   margin-bottom: 1.5rem;
 }
@@ -184,11 +190,13 @@ video {
   transition: 0.2s;
 }
 
-.card__btn:hover, .card__btn:active {
+.card__btn:hover,
+.card__btn:active {
   background-color: #ffdcdc;
 }
 
-.card__btn:hover span, .card__btn:active span {
+.card__btn:hover span,
+.card__btn:active span {
   margin-left: 1.5rem;
 }
 
@@ -298,7 +306,7 @@ video {
 
 /* notre élement de navigation contenant tous les liens */
 .nav {
-  background-color :black;
+  background-color: black;
   opacity: 75%;
   position: fixed;
 
@@ -307,12 +315,12 @@ video {
   font-weight: bolder;
   padding-bottom: 10px;
   padding-top: 10px;
-  padding-right:25px;
+  padding-right: 25px;
 }
 
 /* chacun des liens composant notre barre de navigation*/
 .nav-link {
-  
+
   position: relative;
   display: inline;
   /* passer à block pour avoir un menu en colone*/

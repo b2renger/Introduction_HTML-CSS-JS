@@ -54,14 +54,14 @@
         <div id="gallerie">
           <img id="gallerie-elt" src="assets/image00.jpg"><img>
         </div>
-        <div id="gallerie" style="display: none;"> <img id="gallerie-elt" src="assets/image01.jpg"><img> </div>
-        <div id="gallerie" style="display: none;"> <img id="gallerie-elt" src="assets/image02.gif"><img> </div>
-        <div id="gallerie" style="display: none;"> <img id="gallerie-elt" src="assets/image03.gif"><img> </div>
-        <div id="gallerie" style="display: none;"> <img id="gallerie-elt" src="assets/image04.jpg"><img> </div>
-        <div id="gallerie" style="display: none;"> <img id="gallerie-elt" src="assets/image06.jpg"><img> </div>
-        <div id="gallerie" style="display: none;"> <img id="gallerie-elt" src="assets/image07.jpg"><img> </div>
-        <div id="gallerie" style="display: none;"> <img id="gallerie-elt" src="assets/image08.jpg"><img> </div>
-        <div id="gallerie" style="display: none;"> <img id="gallerie-elt" src="assets/image09.jpg"><img> </div>
+        <div id="gallerie" style="display: none;"> <img id="gallerie-elt" src="assets/image01.jpg"> </div>
+        <div id="gallerie" style="display: none;"> <img id="gallerie-elt" src="assets/image02.gif"> </div>
+        <div id="gallerie" style="display: none;"> <img id="gallerie-elt" src="assets/image03.gif"> </div>
+        <div id="gallerie" style="display: none;"> <img id="gallerie-elt" src="assets/image04.jpg"> </div>
+        <div id="gallerie" style="display: none;"> <img id="gallerie-elt" src="assets/image06.jpg"> </div>
+        <div id="gallerie" style="display: none;"> <img id="gallerie-elt" src="assets/image07.jpg"> </div>
+        <div id="gallerie" style="display: none;"> <img id="gallerie-elt" src="assets/image08.jpg"> </div>
+        <div id="gallerie" style="display: none;"> <img id="gallerie-elt" src="assets/image09.jpg"> </div>
         <video controls id="gallerie" style="display: none;">
           <source src="assets/video.mp4" type="video/mp4">
         </video>
@@ -93,22 +93,86 @@
               <div class="card__content">
                 <h1 class="card__header">Simple card + modal window</h1>
                 <p class="card__text">This is the same template but with a button to open a modal window.</p>
-                <button class="card__btn modal__button">More information <span>&#9673;</span></button>
+                <button class="card__btn modal__button" onClick='openModal()'>More information
+                  <span>&#9673;</span></button>
               </div>
             </div>
           </div> <!-- close grid__item div -->
+
           <!-- modal content -->
           <div class="modal__overlay">
-            <div class="modal__container">
-              <div class="modal__content">
-                <span class="modal__close">×</span>
-                <p class="modal__text"> Some information about this project.</p>
+
+            <div class="modal__content">
+              <span class="modal__close" onClick='closeModal()'>X</span>
+              <p class="modal__text"> Some information about this project.</p>
+              <img class="modal__image" src="assets/image04.jpg">
+              </br>
+              </br>
+              <p class="modal__text"> Some longer text that explains stuff about this project. You can add images
+                videos, links to external ressources or whatever you want.</p>
+            </div>
+          </div><!-- close modal overlay div -->
+
+
+          <!-- une autre card simple-->
+          <div class="grid__item">
+            <div class="card">
+              <img class="card__img" src="assets/image08.jpg">
+              <div class="card__content">
+                <h1 class="card__header">Simple Card</h1>
+                <p class="card__text">Simple text to describe the project, just a photo and no link.</p>
               </div>
             </div>
-          </div> <!-- close modal overlay div -->
+          </div>
+
+          <!-- une autre card mais avec modal -->
+          <div class="grid__item">
+            <div class="card">
+              <img class="card__img" src="assets/image06.jpg">
+              <div class="card__content">
+                <h1 class="card__header">Simple card + modal window : Again !</h1>
+                <p class="card__text">This is the same template but with a button to open a modal window. The text is
+                  long because it is a test to see how it works....</p>
+                <button class="card__btn modal__button" onClick='openModal()'>More information
+                  <span>&#9673;</span></button>
+              </div>
+            </div>
+          </div> <!-- close grid__item div -->
+
+          <!-- modal content -->
+          <div class="modal__overlay">
+
+            <div class="modal__content">
+              <span class="modal__close" onClick='closeModal()'>X</span>
+              <p class="modal__text"> Some more information about this awesome project.</p>
+              <img class="modal__image" src="assets/image06.jpg">
+              </br>
+              </br>
+              <p class="modal__text"> Some longer text that explains stuff about this project. You can add images
+                videos, links to external ressources or whatever you want.</p>
+              <p class="modal__text"> By the by here is a cool <a href="https://academy.zmorph3d.com/"> link</a> if you
+                want to learn about digital fab with the z-morph.</p>
+
+            </div>
+          </div>
+
+
+
+
+
+
+
+
 
         </div> <!-- close grid  div -->
+
+
+
+
       </div> <!-- close wrapper  div -->
+
+
+
     </section>
 
     <!-- SECTION 4 : SKILLS  -->
@@ -124,8 +188,10 @@
               <img class="card__img" src="assets/image00.jpg">
               <div class="card__content">
                 <h1 class="card__header">p5js</h1>
-                <p class="card__text"> P5js is an awesome js library aiming at promoting and aiding software literacty.</p>
-                <p class="card__text">  It is targetted at code beginners, designers and anyone who would like to sketch things with code
+                <p class="card__text"> P5js is an awesome js library aiming at promoting and aiding software literacty.
+                </p>
+                <p class="card__text"> It is targetted at code beginners, designers and anyone who would like to sketch
+                  things with code
                   easily. </p>
                 <a href="http://p5js.org"><button class="card__btn">Go to p5js website<span>&rarr;</span></button> </a>
               </div> <!-- close content-->
@@ -159,6 +225,9 @@
     </section>
 
   </main>
+
+
+
 
 
   <script src="./libs/anime.min.js"></script>
