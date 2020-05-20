@@ -24,10 +24,14 @@ for (let i = 0; i < modalO.length; i++) {
              d.style.display = "block";
             d.style.position = "fixed";
 
+
             const scrollY = document.body.style.top;
 
             d.style.margin.left = (document.body.clientWidth - d.clientWidth) / 2 + 'px';
             d.style.margin.top = (document.body.clientHeight - d.offsetHeight) / 2 + scrollY + 'px';
+            d.scrollIntoView({
+                block: 'center',
+              })
         }
 
         /*
