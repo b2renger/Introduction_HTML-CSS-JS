@@ -15,9 +15,22 @@ var span = document.getElementsByClassName("modal__close");
 
 for (let i = 0; i < modalO.length; i++) {
     btn[i].onclick = function () {
-         modalO[i].style.display = "contents"; // try this !!
 
-         /*
+        let d = modalO[i]
+
+        if (d.classList.contains("modal__inline")) {
+            d.style.display = "contents"; // try this !!
+        } else {
+             d.style.display = "block";
+            d.style.position = "fixed";
+
+            const scrollY = document.body.style.top;
+
+            d.style.margin.left = (document.body.clientWidth - d.clientWidth) / 2 + 'px';
+            d.style.margin.top = (document.body.clientHeight - d.offsetHeight) / 2 + scrollY + 'px';
+        }
+
+        /*
         let d = modalO[i]
        // d.style.display = "block";
         d.style.position = "fixed";
@@ -28,14 +41,14 @@ for (let i = 0; i < modalO.length; i++) {
         
         console.log(document.body.clientHeight, document.body.clientWidth)
         console.log(modalO[i])*/
-      
+
 
 
     }
 
     span[i].onclick = function () {
         modalO[i].style.display = "none";
-       
+
     }
 }
 
