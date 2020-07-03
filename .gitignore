@@ -105,3 +105,6 @@ dist
 
 demo-wall
 .DS_Store
+demo-bind-scroll/index.html
+demo-bind-scroll/script.js
+demo-bind-scroll/style.css
