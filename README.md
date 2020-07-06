@@ -10,6 +10,7 @@ https://makerslab.em-lyon.com/skills.html#web-coding
 Pour résumer HTML permet de définir le contenu d'une page, CSS la mise en forme et JS permet d'ajouter de l'interactivité et / ou de manipuler le contenu et la mise en forme dynamiquement. 
 
 Dans la plupart des sites vous aurez donc trois fichiers :
+
 - *index.html* le contenu de votre page web.
 - *style.css* les règles de style qui s'appliqueront.
 - *script.js* qui définiera tout le reste.
@@ -499,6 +500,22 @@ https://animejs.com/documentation/#cssSelector
 
 #### Construire des cards
 
+
+ rem : Cette unité quand à elle est un pourcentage de taille en fonction du zoom texte que l'utilisateur applique sur son navigateur. Elle se base toujours sur la taille du texte défini à la racine du document. Avec un savant petit calcul CSS on arrive à faire en sorte que pour un zoom texte de 100% (qui est le zoom texte par défaut des navigateur) 1.0rem est strictement la même chose que 10px ou encore que 1.6rem est strictement la même chose que 16px. Cela nous permet de travailler facilement, avec une unité identique mais qui est taillé pour l'accessibilité.
+ 
+https://mozilladevelopers.github.io/playground/css-grid/
+https://gridbyexample.com/resources/
+https://cssgrid.io/
+
+
+combiner des layouts : https://codepen.io/abcretrograde/pen/rKOgWw
+layout classique : https://codepen.io/that_boy_curt/pen/mdbvxoW
+layout animé sobre : https://codepen.io/Jhonierpc/pen/MWgBJpy
+layout effet 3D : https://codepen.io/alphardex/pen/ExaZgxp
+modal https://codepen.io/trey/pen/GqjYym
+
+utf : https://www.w3schools.com/charsets/
+
 [**home**](#Contenu)
 
 ##### Ouvrir une modal en cliquant sur une card
@@ -519,12 +536,21 @@ https://animejs.com/documentation/#cssSelector
 
 [**home**](#Contenu)
 
+
+
+
 ### Limitations de ce modèle
 
 [**home**](#Contenu)
 
 
+### Tailwind.css
+Utiliser tailwind pour faciliter les changements de style
+https://tailwindcss.com/components/cards
 
+### Autre frameworks
+Bootstrap
+Reveal.js
 
 ---
 ## Mise en ligne avec gh-pages
@@ -554,3 +580,24 @@ https://animejs.com/documentation/#cssSelector
 [**home**](#Contenu)
 
 
+## Ressources 
+
+### Cours complet par Louis Eveillard
+http://pca.louiseveillard.com/index.php
+
+### layouts 
+http://1linelayouts.glitch.me/
+http://pca.louiseveillard.com/patterns.php
+
+
+### frameworks
+https://getbootstrap.com/
+
+https://tailwindcss.com/
+  - template landing page : https://github.com/tailwindtoolbox/Landing-Page
+  - https://www.digitalocean.com/community/tutorials/build-a-beautiful-landing-page-with-tailwind-css
+  - tutos : https://tailwindcss.com/screencasts/
+  - https://www.creative-tim.com/learning-lab/tailwind-starter-kit/documentation/css/images
+  - https://nerdcave.com/tailwind-cheat-shee
+
+https://revealjs.com/
